@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table border="1">
+            <tr>
+              <th>Nama</th>
+              <th>Usia</th>
+              <th>Kota</th>
+            </tr>
+            <tr>
+              <td>Andi</td>
+              <td>25</td>
+              <td>Jakarta</td>
+            </tr>
+            <tr>
+              <td>Budi</td>
+              <td>30</td>
+              <td>Bandung</td>
+            </tr>
+          </table>
+    </div>
+    <div>
+        <h2>Formulir</h2>
+        <form onsubmit="handleSubmit(event)">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <input type="submit" value="Kirim">
+        </form>
+    </div>
+    <div class="gambar"></div>
+
+<style>
+  .gambar {
+    width: 300px;
+    height: 200px;
+    background-image: url('images/foto.jpg');
+    background-size: cover;
+  }
+</style>
+    
+</body>
+</html>
