@@ -3,50 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <table border="1">
-            <tr>
-              <th>Nama</th>
-              <th>Usia</th>
-              <th>Kota</th>
-            </tr>
-            <tr>
-              <td>Andi</td>
-              <td>25</td>
-              <td>Jakarta</td>
-            </tr>
-            <tr>
-              <td>Budi</td>
-              <td>30</td>
-              <td>Bandung</td>
-            </tr>
-          </table>
-    </div>
-    <div>
-        <h2>Formulir</h2>
-        <form onsubmit="handleSubmit(event)">
-            <label for="nama">Nama:</label>
-            <input type="text" id="nama" name="nama" required><br><br>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-    
-            <input type="submit" value="Kirim">
-        </form>
-    </div>
-    <div class="gambar"></div>
+       <!-- Navbar -->
+    <nav>
+        <div class="logo">Portfolio saya</div>
+        <div>
+            <a href="#profil">profil</a>
+            <a href="#tentang saya">tentang saya</a>
+            <a href="#pendidikan">pendidikan</a>
+            <a href="#hobi">hobi</a>
+            <div class="toggle-container">
+                <input type="checkbox" id="mode-toggle" class="toggle-checkbox">
+                <label for="mode-toggle" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
 
-<style>
-  .gambar {
-    width: 300px;
-    height: 200px;
-    background-image: url('images/foto.jpg');
-    background-size: cover;
-  }
-</style>
+    <label class="toggle-label">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+    </label>
     
+       <!-- Hero Section -->
+    <section id="profil" class="hero">
+        <div class="hero-content">
+            <img src="ini.jpg" alt="Foto Resti Amelia" class="profile-photo">
+            <h1>Hello, saya RESTI AMELIA</h1>
+            <p>(F1G123058)</p>
+            <p>UNIVERSITAS HALUOLEO</p>
+            <div class="icons">
+              <a href="mailto:restiameliaonembute.com" target="_blank"><img src="EMAIL.jpg" alt="Email" class="icon"></a>
+              <a href="https://www.instagram.com/restiameliaa11" target="_blank"><img src="IG.jpg" alt="Instagram" class="icon"></a>
+              <a href="https://wa.me/628152312960" target="_blank"><img src="WA.jpg" alt="WhatsApp" class="icon"></a>
+          </div>
+        </div>
+    </section>
+
+        <!-- About Section -->
+    <section id="tentang saya" class="tentang saya">
+      <h2>INI TENTANG SAYA</h2>
+      <p>Haiii, saya Resti Amelia, Disini saya akan menceritakan sedikit tentang kepribadian saya!!!</p>
+      <p>Nama lengkap : Resti Amelia</p>
+      <p>Tanggal lahir : 11 Mei 2005</p>
+      <p>Umur : 19 otw 20</p>
+      <p>Tinggi Badan : 159 cm</p>
+      <p>Berat Badan : 57 kg</p>
+      <p>Anak ke : 1</p>
+      <p>Club favorite : Real Madrid</p>
+    </div>
+    </section>
+
+    <section id="pendidikan" class="pendidikan">
+        <h2>Pendidikan</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Jenjang Pendidikan</h3>
+                <p>1. RA Mujahidin Trymuliya</p>
+                <p>2. SD N 2 Onembute</p>
+                <p>3. MTs Mujahidin Trimuliya</p>
+                <p>4. SMA N 1 Tirawuta</p>
+                <p>Sekarang saya adalah mahasiswi di Universitas Haluoleo, FMIPA, Prodi Ilmu Komputer angkatan 2023.</p>
+            </div>
+            <div class="card">
+                <h3>Pengalaman Akademik</h3>
+                <p>Saya pernah terpilih menjadi salah satu anggota Pasukan Pengibar Bendera (PASKIBRA) untuk mewakili sekolah pada tahun 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="hobi">
+        <h2>Hobi</h2>
+        <div class="card">
+            <p>Saya mempunyai beberapa hobi, yaitu :</p>
+            <p>1. Voli</p>
+            <p>2. Bulu tangkis</p>
+            <p>3. Tenis meja</p>
+            <p>Intinya saya lebih suka kegiatan yang berbau keolahragaan dibanding dengan kesenian</p>
+        </div>
+    </section>
+
+    <!-- Particle Effect -->
+    <div class="particles"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>
